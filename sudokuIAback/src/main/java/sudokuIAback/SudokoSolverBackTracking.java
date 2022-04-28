@@ -2,6 +2,7 @@ package sudokuIAback;
 
 public class SudokoSolverBackTracking {
 	static long start = System.currentTimeMillis();
+	static int c = 0;
 
 	public static boolean solve(int[][] sudoku) {
 		int i = 0, j = 0;
@@ -31,9 +32,11 @@ public class SudokoSolverBackTracking {
 				// Resolva recursivamente o sudoku
 				if (solve(sudoku)) {
 					return true;
+
 				}
-				// voltar atrás se a recursão retornar false
+				// voltar atrás se a recursão retornar false (backtracking)
 				sudoku[i][j] = 0;
+				c++;
 			}
 		}
 
@@ -90,5 +93,6 @@ public class SudokoSolverBackTracking {
 		long finish = System.currentTimeMillis();
 		long total = finish - start;
 		System.out.println("Resolvido com sucesso! em " + total * 0.001 + " segundos");
+		System.out.println("Número total de nós de backtracking é " +c);
 	}
 }
