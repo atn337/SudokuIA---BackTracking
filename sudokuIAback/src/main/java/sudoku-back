@@ -1,5 +1,6 @@
 
 
+
 Backtracking é um tipo de algoritmo que representa um refinamento da busca por força bruta, 
 em que múltiplas soluções podem ser eliminadas sem serem explicitamente examinadas.
 
