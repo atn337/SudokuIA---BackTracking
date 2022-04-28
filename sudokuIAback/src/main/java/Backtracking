@@ -1,5 +1,8 @@
 
 
+Backtracking é um tipo de algoritmo que representa um refinamento da busca por força bruta, 
+em que múltiplas soluções podem ser eliminadas sem serem explicitamente examinadas.
+
 Para resolver um Sudokku a complexidade de tempo desse processo é muito alta, então usamos o backtracking 
 para reduzir a recursão assim que descobrimos que o caminho atual não levará a uma solução.
 
