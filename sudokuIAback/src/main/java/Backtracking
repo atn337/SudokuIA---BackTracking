@@ -1,0 +1,7 @@
+
+
+Para resolver um Sudokku a complexidade de tempo desse processo é muito alta, então usamos o backtracking 
+para reduzir a recursão assim que descobrimos que o caminho atual não levará a uma solução.
+
+Isso tende a reduzir o tempo necessário para resolver o quebra-cabeça, mas o limite superior
+geral da complexidade do tempo permanece o mesmo.
